@@ -1,0 +1,76 @@
+export const branches = [
+  {
+    id: 'julio-arboleda',
+    name: 'Julio Arboleda',
+    address: 'Julio Arboleda 3857, Córdoba',
+    mapsQuery: 'Julio+Arboleda+3857+Córdoba+Argentina',
+    phone: null,
+    highlight: 'Horario extendido hasta las 23h',
+    schedule: {
+      'Lunes a Sábado': '7:00 – 23:00',
+      'Domingos': '7:00 – 23:00',
+    },
+  },
+  {
+    id: 'santa-fe',
+    name: 'Av. Santa Fe',
+    address: 'Av. Santa Fe 944, Córdoba',
+    mapsQuery: 'Av+Santa+Fe+944+Córdoba+Argentina',
+    phone: null,
+    highlight: null,
+    schedule: {
+      'Lunes a Sábado': '6:00 – 21:00',
+      'Domingos': '7:30 – 20:00',
+    },
+  },
+  {
+    id: 'diagonal-ica',
+    name: 'Diagonal Ica',
+    address: 'Av. Diagonal Ica 784, Córdoba',
+    mapsQuery: 'Diagonal+Ica+784+Córdoba+Argentina',
+    phone: null,
+    highlight: null,
+    schedule: {
+      'Lunes a Sábado': '6:00 – 21:00',
+      'Domingos': '7:30 – 20:00',
+    },
+  },
+  {
+    id: 'emilio-caraffa',
+    name: 'Emilio Caraffa',
+    address: 'Av. Emilio Caraffa 2568, Córdoba',
+    mapsQuery: 'Av+Emilio+Caraffa+2568+Córdoba+Argentina',
+    phone: null,
+    highlight: null,
+    schedule: {
+      'Lunes a Viernes': '6:00 – 21:00',
+      'Sábados': '6:30 – 20:30',
+      'Domingos': '7:30 – 20:00',
+    },
+  },
+  {
+    id: 'mons-cabrera',
+    name: 'Mons. Pablo Cabrera',
+    address: 'Av. Mons. Pablo Cabrera 3101, Córdoba',
+    mapsQuery: 'Av+Monseñor+Pablo+Cabrera+3101+Córdoba+Argentina',
+    phone: null,
+    highlight: null,
+    schedule: {
+      'Lunes a Sábado': '6:00 – 21:00',
+      'Domingos': '7:30 – 20:00',
+    },
+  },
+  {
+    id: 'fructuoso-rivera',
+    name: 'Fructuoso Rivera',
+    address: 'Fructuoso Rivera 800, Córdoba',
+    mapsQuery: 'Fructuoso+Rivera+800+Córdoba+Argentina',
+    phone: null,
+    highlight: null,
+    schedule: {
+      'Lunes a Viernes': '6:00 – 21:00',
+      'Sábados': '7:00 – 21:00',
+      'Domingos': '8:00 – 20:00',
+    },
+  },
+];
