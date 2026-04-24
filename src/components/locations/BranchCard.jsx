@@ -4,6 +4,12 @@ import { MapPin, Clock, Navigation, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export default function BranchCard({ branch, index }) {
+  const handleExternalLink = (url) => {
+    // Smooth open in new tab
+    setTimeout(() => {
+      window.open(url, '_blank', 'noopener,noreferrer');
+    }, 50);
+  };
   const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${branch.mapsQuery}`;
 
   return (
@@ -49,15 +55,13 @@ export default function BranchCard({ branch, index }) {
       </div>
 
       {/* CTA */}
-      <Button
-        asChild
-        className="w-full rounded-xl py-5 text-base font-body"
+      <button
+        onClick={() => handleExternalLink(mapsUrl)}
+        className="w-full rounded-xl py-5 text-base font-body bg-primary text-primary-foreground hover:shadow-lg hover:scale-[1.02] transition-all duration-300 cursor-pointer"
       >
-        <a href={mapsUrl} target="_blank" rel="noopener noreferrer">
-          <Navigation size={16} className="mr-2" />
-          Cómo llegar
-        </a>
-      </Button>
+        <Navigation size={16} className="mr-2 inline" />
+        Cómo llegar
+      </button>
     </motion.div>
   );
 }

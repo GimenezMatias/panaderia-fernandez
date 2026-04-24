@@ -4,6 +4,13 @@ import { motion } from 'framer-motion';
 import { Instagram, ExternalLink, Phone, MapPin, Clock } from 'lucide-react';
 
 export default function Footer() {
+  const handleExternalLink = (url) => {
+    // Smooth open in new tab
+    setTimeout(() => {
+      window.open(url, '_blank', 'noopener,noreferrer');
+    }, 50);
+  };
+
   return (
     <motion.footer
       initial={{ opacity: 0 }}
@@ -55,22 +62,18 @@ export default function Footer() {
               >
                 +54 881 6170
               </a>
-              <a
-                href="https://www.instagram.com/fernandezpanaderia.cafe/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sm text-accent-foreground/80 hover:text-accent-foreground transition-colors"
+              <button
+                onClick={() => handleExternalLink('https://www.instagram.com/fernandezpanaderia.cafe/')}
+                className="flex items-center gap-2 text-sm text-accent-foreground/80 hover:text-accent-foreground transition-colors cursor-pointer"
               >
                 <Instagram size={16} /> Instagram
-              </a>
-              <a
-                href="https://www.pedidosya.com.ar/restaurantes/cordoba/fernandez-panaderia-y-cafe-7eb65bc8-a038-4c42-bcca-0ed73a64224a-menu"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sm text-accent-foreground/80 hover:text-accent-foreground transition-colors"
+              </button>
+              <button
+                onClick={() => handleExternalLink('https://www.pedidosya.com.ar/restaurantes/cordoba/fernandez-panaderia-y-cafe-7eb65bc8-a038-4c42-bcca-0ed73a64224a-menu')}
+                className="flex items-center gap-2 text-sm text-accent-foreground/80 hover:text-accent-foreground transition-colors cursor-pointer"
               >
                 <ExternalLink size={16} /> PedidosYa
-              </a>
+              </button>
             </div>
           </div>
         </div>

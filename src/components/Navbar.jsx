@@ -89,34 +89,44 @@ export default function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-40 bg-background/98 backdrop-blur-xl md:hidden"
+            className="fixed inset-0 z-40 flex items-center justify-center md:hidden bg-black/20 backdrop-blur-sm"
+            onClick={() => setIsOpen(false)}
           >
-            <div className="flex flex-col items-center justify-center h-full gap-6">
-              {navLinks.map((link, i) => {
-                const Icon = link.icon;
-                return (
-                  <motion.div
-                    key={link.to}
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 20 }}
-                    transition={{ delay: i * 0.08 }}
-                  >
-                    <Link
-                      to={link.to}
-                      className={`flex items-center gap-3 text-2xl font-display font-medium transition-colors ${
-                        location.pathname === link.to
-                          ? 'text-primary'
-                          : 'text-foreground/70 hover:text-foreground'
-                      }`}
+            <motion.div
+              initial={{ scale: 0.95, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.95, opacity: 0 }}
+              transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+              className="bg-secondary/50 backdrop-blur-md rounded-3xl p-8 mx-4 max-w-sm w-full border border-secondary/40"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div className="flex flex-col gap-4">
+                {navLinks.map((link, i) => {
+                  const Icon = link.icon;
+                  return (
+                    <motion.div
+                      key={link.to}
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      exit={{ opacity: 0, x: -20 }}
+                      transition={{ delay: i * 0.08 }}
                     >
-                      <Icon size={24} strokeWidth={1.5} />
-                      {link.label}
-                    </Link>
-                  </motion.div>
-                );
-              })}
-            </div>
+                      <Link
+                        to={link.to}
+                        className={`flex items-center gap-3 px-4 py-3 rounded-xl font-display font-medium transition-all ${
+                          location.pathname === link.to
+                            ? 'bg-primary text-primary-foreground shadow-md'
+                            : 'text-foreground/70 hover:bg-secondary/50 hover:text-foreground'
+                        }`}
+                      >
+                        <Icon size={20} strokeWidth={1.5} />
+                        {link.label}
+                      </Link>
+                    </motion.div>
+                  );
+                })}
+              </div>
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
