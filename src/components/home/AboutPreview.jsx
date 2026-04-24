@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import SectionTitle from '../SectionTitle';
 
-const ABOUT_IMAGE = 'https://via.placeholder.com/600x400/DEB887/000000?text=Sobre+Nosotros';
+const ABOUT_IMAGE = '/images/about.jpg';
 
 export default function AboutPreview() {
   return (

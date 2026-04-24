@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { UtensilsCrossed, MapPin, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
-const HERO_IMAGE = 'https://via.placeholder.com/1920x1080/8B4513/FFFFFF?text=Panader%C3%ADa+Fern%C3%A1ndez';
+const HERO_IMAGE = '/images/hero.jpg';
 
 export default function Hero() {
   return (

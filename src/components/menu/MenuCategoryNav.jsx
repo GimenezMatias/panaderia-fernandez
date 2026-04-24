@@ -5,9 +5,14 @@ export default function MenuCategoryNav({ categories, activeCategory, onSelect }
   const scrollContainerRef = useRef(null);
   const [showLeftGradient, setShowLeftGradient] = useState(false);
   const [showRightGradient, setShowRightGradient] = useState(false);
+  const scrollTimeoutRef = useRef(null);
 
-  // Scroll active button to center on mobile
+  // Scroll active button to center - synchronized with selection
   useEffect(() => {
+    if (scrollTimeoutRef.current) {
+      clearTimeout(scrollTimeoutRef.current);
+    }
+
     if (!scrollContainerRef.current) return;
     
     const activeButton = scrollContainerRef.current.querySelector('[data-active="true"]');
@@ -19,10 +24,7 @@ export default function MenuCategoryNav({ categories, activeCategory, onSelect }
       
       // Center the active button
       const scrollPosition = buttonOffset - (containerWidth / 2) + (buttonWidth / 2);
-      container.scrollTo({
-        left: scrollPosition,
-        behavior: 'auto'
-      });
+      container.scrollLeft = scrollPosition;
     }
   }, [activeCategory]);
 
