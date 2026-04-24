@@ -39,7 +39,7 @@ export default function Hero() {
           >
             Panadería
             <br />
-            <span className="italic font-light">Fernández</span>
+            <span className="italic font-light" style={{ color: '#D4AF37' }}>Fernández</span>
           </motion.h1>
 
           <motion.p

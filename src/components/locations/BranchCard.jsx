@@ -16,7 +16,15 @@ export default function BranchCard({ branch, index }) {
       className="bg-card rounded-2xl border border-border/50 p-6 sm:p-7 hover:shadow-xl hover:border-primary/20 transition-all duration-400"
     >
       {/* Header */}
-      <div className="flex items-start justify-between mb-4">
+      <div className="mb-4">
+        {branch.highlight && (
+          <div className="mb-3">
+            <span className="flex items-center gap-1 px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-medium w-fit">
+              <Star size={12} className="fill-primary" />
+              {branch.highlight}
+            </span>
+          </div>
+        )}
         <div>
           <h3 className="text-xl font-display font-semibold">{branch.name}</h3>
           <div className="flex items-center gap-1.5 text-muted-foreground mt-1">
@@ -24,12 +32,6 @@ export default function BranchCard({ branch, index }) {
             <span className="text-sm font-body">{branch.address}</span>
           </div>
         </div>
-        {branch.highlight && (
-          <span className="flex items-center gap-1 px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-medium whitespace-nowrap">
-            <Star size={12} className="fill-primary" />
-            {branch.highlight}
-          </span>
-        )}
       </div>
 
       {/* Schedule */}

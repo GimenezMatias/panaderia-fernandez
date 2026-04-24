@@ -21,7 +21,7 @@ export default function MenuCategoryNav({ categories, activeCategory, onSelect }
       const scrollPosition = buttonOffset - (containerWidth / 2) + (buttonWidth / 2);
       container.scrollTo({
         left: scrollPosition,
-        behavior: 'smooth'
+        behavior: 'auto'
       });
     }
   }, [activeCategory]);
