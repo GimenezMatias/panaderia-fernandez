@@ -15,7 +15,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClientInstance}>
       <AuthProvider>
-        <Router>
+        <Router basename="/panaderia-fernandez/">
           <Routes>
             <Route element={<Layout />}>
               <Route path="/" element={<Home />} />
