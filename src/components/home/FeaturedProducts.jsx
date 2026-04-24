@@ -5,8 +5,8 @@ import { Star, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import SectionTitle from '../SectionTitle';
 
-const PASTRY_IMAGE = 'https://via.placeholder.com/400x300/D2691E/FFFFFF?text=Facturas+y+Medialunas';
-const MENU_IMAGE = 'https://via.placeholder.com/400x300/8B4513/FFFFFF?text=Men%C3%BA+Completo';
+const PASTRY_IMAGE = '/images/exterior.jpg';
+const MENU_IMAGE = '/images/fachada.jpg';
 
 const bestSellers = [
   { name: 'Combo Clásico', desc: 'Infusión + 2 medialunas', price: '$7.700', tag: 'Más vendido' },

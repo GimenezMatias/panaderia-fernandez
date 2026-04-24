@@ -1,0 +1,1749 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panadería Fernández | Panadería y Café en Córdoba</title>
+  <meta name="description" content="Panadería y Cafetería Fernández en Córdoba. 6 sucursales. Desayunos, meriendas, facturas, tortas, café y más. Tu panadería de toda la vida." />
+  <meta name="keywords" content="panadería Córdoba, cafetería Córdoba, desayunos Córdoba, facturas Córdoba, Panadería Fernández, panadería Santa Fe Córdoba" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Panadería Fernández | Córdoba" />
+  <meta property="og:description" content="Desayunos, meriendas y panadería artesanal. 6 sucursales en Córdoba." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://panaderiafernandez.com.ar/" />
+
+  <!-- Schema LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Bakery",
+    "name": "Panadería Fernández",
+    "description": "Panadería y cafetería con 6 sucursales en Córdoba, Argentina. Desayunos, meriendas, facturas artesanales, tortas y café.",
+    "telephone": "+548816170",
+    "url": "https://panaderiafernandez.com.ar",
+    "sameAs": [
+      "https://www.instagram.com/fernandezpanaderia.cafe/",
+      "https://www.pedidosya.com.ar/restaurantes/cordoba/fernandez-panaderia-y-cafe-7eb65bc8-a038-4c42-bcca-0ed73a64224a-menu"
+    ],
+    "location": [
+      {"@type": "Place", "name": "Julio Arboleda", "address": {"@type": "PostalAddress", "streetAddress": "Julio Arboleda 3857", "addressLocality": "Córdoba", "addressCountry": "AR"}},
+      {"@type": "Place", "name": "Santa Fe", "address": {"@type": "PostalAddress", "streetAddress": "Av. Santa Fe 944", "addressLocality": "Córdoba", "addressCountry": "AR"}},
+      {"@type": "Place", "name": "Diagonal Ica", "address": {"@type": "PostalAddress", "streetAddress": "Av. Diagonal Ica 784", "addressLocality": "Córdoba", "addressCountry": "AR"}},
+      {"@type": "Place", "name": "Emilio Caraffa", "address": {"@type": "PostalAddress", "streetAddress": "Av. Emilio Caraffa 2568", "addressLocality": "Córdoba", "addressCountry": "AR"}},
+      {"@type": "Place", "name": "Monseñor Pablo Cabrera", "address": {"@type": "PostalAddress", "streetAddress": "Av. Monseñor Pablo Cabrera 3101", "addressLocality": "Córdoba", "addressCountry": "AR"}},
+      {"@type": "Place", "name": "Fructuoso Rivera", "address": {"@type": "PostalAddress", "streetAddress": "Fructuoso Rivera 800", "addressLocality": "Córdoba", "addressCountry": "AR"}}
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lora:wght@400;500;600&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ===========================
+       VARIABLES & RESET
+    =========================== */
+    :root {
+      --cream:       #FAF5EC;
+      --cream-dark:  #F0E8D8;
+      --cream-mid:   #E8D9C0;
+      --bordo:       #7A2030;
+      --bordo-dark:  #5C1624;
+      --bordo-light: #9E3448;
+      --brown:       #6B4226;
+      --brown-light: #A0714F;
+      --gold:        #C49A3C;
+      --text-dark:   #2A1810;
+      --text-mid:    #5A3E2B;
+      --text-light:  #8B6F55;
+      --white:       #FFFFFF;
+      --shadow-soft: 0 4px 24px rgba(90,40,30,0.10);
+      --shadow-card: 0 2px 12px rgba(90,40,30,0.12);
+      --radius:      12px;
+      --radius-sm:   8px;
+      --transition:  0.3s ease;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: 'Source Sans 3', sans-serif;
+      background: var(--cream);
+      color: var(--text-dark);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+
+    /* ===========================
+       TYPOGRAPHY
+    =========================== */
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+      line-height: 1.2;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 5vw, 2.6rem);
+      color: var(--bordo-dark);
+      text-align: center;
+      margin-bottom: 0.4rem;
+    }
+
+    .section-subtitle {
+      font-family: 'Lora', serif;
+      font-size: 1rem;
+      color: var(--text-light);
+      text-align: center;
+      margin-bottom: 2.5rem;
+      font-style: italic;
+    }
+
+    /* ===========================
+       SECTION WRAPPER
+    =========================== */
+    section {
+      padding: 4rem 1.2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    section.full-width {
+      max-width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .divider {
+      width: 60px;
+      height: 3px;
+      background: var(--gold);
+      margin: 0.6rem auto 2rem;
+      border-radius: 99px;
+    }
+
+    /* ===========================
+       HEADER / NAV
+    =========================== */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(250, 245, 236, 0.95);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--cream-mid);
+      padding: 0.9rem 1.4rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: box-shadow var(--transition);
+    }
+
+    header.scrolled {
+      box-shadow: 0 2px 20px rgba(90,40,30,0.12);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+    }
+
+    .logo-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--bordo);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .logo-icon svg {
+      width: 22px;
+      height: 22px;
+      fill: var(--cream);
+    }
+
+    .logo-text {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--bordo-dark);
+      line-height: 1.1;
+    }
+
+    .logo-sub {
+      font-family: 'Lora', serif;
+      font-size: 0.7rem;
+      color: var(--text-light);
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      font-style: italic;
+    }
+
+    nav {
+      display: flex;
+      gap: 0.3rem;
+    }
+
+    nav a {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text-mid);
+      padding: 0.45rem 0.7rem;
+      border-radius: var(--radius-sm);
+      transition: color var(--transition), background var(--transition);
+    }
+
+    nav a:hover {
+      color: var(--bordo);
+      background: rgba(122,32,48,0.06);
+    }
+
+    /* Hamburger */
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .menu-toggle span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--bordo-dark);
+      border-radius: 99px;
+      transition: all 0.3s;
+    }
+
+    .menu-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .menu-toggle.open span:nth-child(2) { opacity: 0; }
+    .menu-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 65px;
+      left: 0;
+      right: 0;
+      background: var(--cream);
+      border-bottom: 1px solid var(--cream-mid);
+      padding: 1rem 1.4rem 1.5rem;
+      z-index: 99;
+      box-shadow: 0 8px 24px rgba(90,40,30,0.12);
+    }
+
+    .mobile-menu.open { display: block; }
+
+    .mobile-menu a {
+      display: block;
+      padding: 0.85rem 0;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text-mid);
+      border-bottom: 1px solid var(--cream-dark);
+    }
+
+    .mobile-menu a:last-child { border-bottom: none; }
+
+    /* ===========================
+       HERO
+    =========================== */
+    #hero {
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 6rem 1.4rem 3rem;
+      position: relative;
+      overflow: hidden;
+      max-width: 100%;
+      background:
+        radial-gradient(ellipse 70% 50% at 50% 0%, rgba(197,154,60,0.12) 0%, transparent 60%),
+        var(--cream);
+    }
+
+    /* Decorative grain texture */
+    #hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
+      pointer-events: none;
+      opacity: 0.5;
+    }
+
+    /* Decorative circle */
+    #hero::after {
+      content: '';
+      position: absolute;
+      bottom: -120px;
+      right: -80px;
+      width: 350px;
+      height: 350px;
+      border-radius: 50%;
+      border: 2px solid rgba(197,154,60,0.15);
+      pointer-events: none;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: rgba(122,32,48,0.08);
+      border: 1px solid rgba(122,32,48,0.18);
+      color: var(--bordo);
+      font-family: 'Lora', serif;
+      font-size: 0.82rem;
+      font-style: italic;
+      padding: 0.4rem 1rem;
+      border-radius: 99px;
+      margin-bottom: 1.4rem;
+      opacity: 0;
+      animation: fadeUp 0.7s ease 0.2s forwards;
+    }
+
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.6rem, 10vw, 5rem);
+      font-weight: 700;
+      color: var(--bordo-dark);
+      margin-bottom: 0.5rem;
+      opacity: 0;
+      animation: fadeUp 0.7s ease 0.4s forwards;
+      line-height: 1.05;
+    }
+
+    .hero-title em {
+      font-style: italic;
+      color: var(--gold);
+    }
+
+    .hero-sub {
+      font-family: 'Lora', serif;
+      font-size: clamp(1rem, 3vw, 1.25rem);
+      color: var(--text-mid);
+      max-width: 480px;
+      margin: 0 auto 2.2rem;
+      opacity: 0;
+      animation: fadeUp 0.7s ease 0.6s forwards;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+      justify-content: center;
+      opacity: 0;
+      animation: fadeUp 0.7s ease 0.8s forwards;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.9rem 1.7rem;
+      border-radius: var(--radius-sm);
+      font-size: 1rem;
+      font-weight: 600;
+      font-family: 'Source Sans 3', sans-serif;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: all var(--transition);
+      text-align: center;
+      min-height: 52px; /* accesibilidad dedos grandes */
+    }
+
+    .btn-primary {
+      background: var(--bordo);
+      color: var(--white);
+      border-color: var(--bordo);
+    }
+
+    .btn-primary:hover {
+      background: var(--bordo-dark);
+      border-color: var(--bordo-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(122,32,48,0.3);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--bordo);
+      border-color: var(--bordo);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(122,32,48,0.06);
+      transform: translateY(-2px);
+    }
+
+    .btn-whatsapp {
+      background: #25D366;
+      color: var(--white);
+      border-color: #25D366;
+    }
+
+    .btn-whatsapp:hover {
+      background: #1dab53;
+      border-color: #1dab53;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(37,211,102,0.3);
+    }
+
+    .hero-scroll {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.3rem;
+      color: var(--text-light);
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      opacity: 0;
+      animation: fadeUp 0.7s ease 1.2s forwards;
+    }
+
+    .scroll-line {
+      width: 1px;
+      height: 32px;
+      background: linear-gradient(to bottom, var(--gold), transparent);
+      animation: scrollPulse 1.8s ease-in-out infinite;
+    }
+
+    /* ===========================
+       STATS BAR
+    =========================== */
+    .stats-bar {
+      background: var(--bordo);
+      color: var(--cream);
+      padding: 1.4rem 1.4rem;
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      flex-wrap: wrap;
+    }
+
+    .stat-item {
+      text-align: center;
+      padding: 0.5rem 2.2rem;
+      border-right: 1px solid rgba(255,255,255,0.18);
+      opacity: 0;
+      animation: fadeIn 0.6s ease forwards;
+    }
+
+    .stat-item:last-child { border-right: none; }
+    .stat-item:nth-child(1) { animation-delay: 0.1s; }
+    .stat-item:nth-child(2) { animation-delay: 0.2s; }
+    .stat-item:nth-child(3) { animation-delay: 0.3s; }
+    .stat-item:nth-child(4) { animation-delay: 0.4s; }
+
+    .stat-number {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 0.78rem;
+      opacity: 0.85;
+      margin-top: 0.2rem;
+      letter-spacing: 0.03em;
+    }
+
+    /* ===========================
+       MENÚ DIGITAL
+    =========================== */
+    #menu {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+
+    .menu-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    .tab-btn {
+      padding: 0.55rem 1.1rem;
+      border-radius: 99px;
+      border: 2px solid var(--cream-mid);
+      background: var(--white);
+      color: var(--text-mid);
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all var(--transition);
+      font-family: 'Source Sans 3', sans-serif;
+      min-height: 44px;
+    }
+
+    .tab-btn:hover {
+      border-color: var(--bordo-light);
+      color: var(--bordo);
+    }
+
+    .tab-btn.active {
+      background: var(--bordo);
+      color: var(--white);
+      border-color: var(--bordo);
+    }
+
+    .menu-panel {
+      display: none;
+      animation: fadeIn 0.4s ease;
+    }
+
+    .menu-panel.active { display: block; }
+
+    .menu-category-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.35rem;
+      color: var(--bordo-dark);
+      margin: 1.8rem 0 0.8rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--cream-dark);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .menu-category-title span { color: var(--gold); font-size: 1.1rem; }
+
+    /* Menu items */
+    .menu-item {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.85rem 0;
+      border-bottom: 1px solid rgba(208,189,165,0.4);
+      transition: background var(--transition);
+    }
+
+    .menu-item:last-child { border-bottom: none; }
+
+    .menu-item:hover { background: rgba(208,189,165,0.12); margin: 0 -0.5rem; padding-left: 0.5rem; padding-right: 0.5rem; border-radius: var(--radius-sm); }
+
+    .item-left { flex: 1; }
+
+    .item-name {
+      font-family: 'Lora', serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      line-height: 1.3;
+    }
+
+    .item-desc {
+      font-size: 0.87rem;
+      color: var(--text-light);
+      margin-top: 0.2rem;
+      line-height: 1.4;
+    }
+
+    .item-price {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--bordo);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .badge-vendido {
+      display: inline-block;
+      background: rgba(197,154,60,0.15);
+      border: 1px solid rgba(197,154,60,0.35);
+      color: var(--brown);
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.1rem 0.5rem;
+      border-radius: 99px;
+      margin-left: 0.4rem;
+      vertical-align: middle;
+    }
+
+    .combo-card {
+      background: var(--white);
+      border: 1px solid var(--cream-mid);
+      border-radius: var(--radius);
+      padding: 1rem 1.2rem;
+      margin-bottom: 0.8rem;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      box-shadow: var(--shadow-card);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+
+    .combo-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-soft); }
+
+    .combo-card .item-name { font-size: 1.05rem; }
+
+    /* ===========================
+       SUCURSALES
+    =========================== */
+    #sucursales {
+      background: var(--cream-dark);
+      max-width: 100%;
+      padding: 4rem 1.4rem;
+    }
+
+    #sucursales > * { max-width: 900px; margin-left: auto; margin-right: auto; }
+
+    #sucursales .section-title,
+    #sucursales .section-subtitle,
+    #sucursales .divider { margin-left: auto; margin-right: auto; display: block; text-align: center; }
+    #sucursales .divider { margin: 0.6rem auto 2rem; }
+
+    .sucursales-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1rem;
+      margin-top: 0;
+    }
+
+    .sucursal-card {
+      background: var(--cream);
+      border-radius: var(--radius);
+      padding: 1.4rem;
+      box-shadow: var(--shadow-card);
+      border-left: 4px solid var(--bordo);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+
+    .sucursal-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-soft); }
+
+    .sucursal-card.destacada { border-left-color: var(--gold); }
+
+    .sucursal-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--bordo-dark);
+      margin-bottom: 0.3rem;
+    }
+
+    .sucursal-address {
+      font-size: 0.92rem;
+      color: var(--text-mid);
+      margin-bottom: 0.8rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.4rem;
+    }
+
+    .sucursal-address svg { flex-shrink: 0; margin-top: 3px; }
+
+    .sucursal-horarios {
+      font-size: 0.85rem;
+      color: var(--text-light);
+      margin-bottom: 1rem;
+      line-height: 1.5;
+    }
+
+    .horario-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.2rem 0;
+      border-bottom: 1px dotted rgba(208,189,165,0.6);
+    }
+
+    .horario-row:last-child { border-bottom: none; }
+
+    .horario-dia { font-weight: 600; color: var(--text-mid); font-size: 0.82rem; }
+    .horario-hora { color: var(--text-light); font-size: 0.82rem; }
+
+    .badge-nocturno {
+      display: inline-block;
+      background: var(--bordo);
+      color: var(--cream);
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.2rem 0.6rem;
+      border-radius: 99px;
+      margin-bottom: 0.6rem;
+    }
+
+    .btn-maps {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      width: 100%;
+      padding: 0.7rem;
+      background: var(--bordo);
+      color: var(--white);
+      border-radius: var(--radius-sm);
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: background var(--transition);
+      min-height: 44px;
+    }
+
+    .btn-maps:hover { background: var(--bordo-dark); }
+
+    /* ===========================
+       SOBRE NOSOTROS
+    =========================== */
+    #nosotros {
+      background: var(--white);
+      max-width: 100%;
+      padding: 4rem 1.4rem;
+    }
+
+    #nosotros > .inner {
+      max-width: 760px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .nosotros-text {
+      font-family: 'Lora', serif;
+      font-size: 1.05rem;
+      color: var(--text-mid);
+      line-height: 1.8;
+      margin-bottom: 1.2rem;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .feature-item {
+      background: var(--cream);
+      border-radius: var(--radius);
+      padding: 1.2rem 1rem;
+      text-align: center;
+    }
+
+    .feature-icon {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .feature-label {
+      font-family: 'Lora', serif;
+      font-size: 0.92rem;
+      color: var(--text-mid);
+      font-weight: 600;
+    }
+
+    /* ===========================
+       CONTACTO
+    =========================== */
+    #contacto {
+      background: var(--bordo-dark);
+      max-width: 100%;
+      padding: 4rem 1.4rem;
+      color: var(--cream);
+    }
+
+    #contacto > .inner {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    #contacto .section-title { color: var(--cream); }
+    #contacto .section-subtitle { color: rgba(250,245,236,0.7); }
+    #contacto .divider { background: var(--gold); }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+
+    .contact-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.9rem 1.5rem;
+      border-radius: var(--radius-sm);
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all var(--transition);
+      min-height: 52px;
+    }
+
+    .contact-btn-wa { background: #25D366; color: #fff; }
+    .contact-btn-wa:hover { background: #1dab53; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(37,211,102,0.3); }
+
+    .contact-btn-ig { background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); color: #fff; }
+    .contact-btn-ig:hover { opacity: 0.9; transform: translateY(-2px); }
+
+    .contact-btn-py { background: #FA212A; color: #fff; }
+    .contact-btn-py:hover { opacity: 0.9; transform: translateY(-2px); }
+
+    .tel-box {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: rgba(250,245,236,0.1);
+      border: 1px solid rgba(250,245,236,0.2);
+      padding: 0.7rem 1.4rem;
+      border-radius: var(--radius-sm);
+      font-size: 1.05rem;
+      color: var(--cream);
+      margin-top: 1.2rem;
+    }
+
+    /* ===========================
+       FOOTER
+    =========================== */
+    footer {
+      background: var(--text-dark);
+      color: var(--cream);
+      text-align: center;
+      padding: 1.8rem 1.4rem;
+      font-size: 0.85rem;
+      opacity: 0.9;
+    }
+
+    footer a { color: var(--gold); }
+
+    /* ===========================
+       WHATSAPP FLOAT
+    =========================== */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      z-index: 200;
+      background: #25D366;
+      color: var(--white);
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.45);
+      transition: transform var(--transition), box-shadow var(--transition);
+      animation: pulse-wa 2.5s ease-in-out infinite;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.08);
+      box-shadow: 0 6px 28px rgba(37,211,102,0.55);
+      animation: none;
+    }
+
+    .whatsapp-float svg { width: 30px; height: 30px; }
+
+    /* ===========================
+       ANIMATIONS
+    =========================== */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    @keyframes scrollPulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    @keyframes pulse-wa {
+      0%, 100% { box-shadow: 0 4px 20px rgba(37,211,102,0.45); }
+      50% { box-shadow: 0 4px 30px rgba(37,211,102,0.7), 0 0 0 8px rgba(37,211,102,0.1); }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ===========================
+       RESPONSIVE
+    =========================== */
+    @media (max-width: 640px) {
+      nav { display: none; }
+      .menu-toggle { display: flex; }
+
+      .stat-item { padding: 0.5rem 1rem; }
+      .stat-number { font-size: 1.5rem; }
+      .stat-label { font-size: 0.72rem; }
+
+      .sucursales-grid { grid-template-columns: 1fr; }
+
+      .hero-buttons { flex-direction: column; align-items: center; }
+      .hero-buttons .btn { width: 100%; max-width: 320px; justify-content: center; }
+
+      .contact-links { flex-direction: column; align-items: center; }
+      .contact-btn { width: 100%; max-width: 320px; justify-content: center; }
+
+      .menu-tabs { gap: 0.4rem; }
+      .tab-btn { font-size: 0.82rem; padding: 0.45rem 0.85rem; }
+    }
+
+    @media (max-width: 380px) {
+      .logo-text { font-size: 1rem; }
+      .stat-item { padding: 0.5rem 0.6rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ======================== HEADER ======================== -->
+  <header id="site-header">
+    <a class="logo" href="#hero" aria-label="Panadería Fernández - Inicio">
+      <div class="logo-icon">
+        <!-- Bread/wheat icon -->
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2C8.5 2 6 4.5 6 7.5c0 1.5.6 2.8 1.5 3.8L6 20h12l-1.5-8.7c.9-1 1.5-2.3 1.5-3.8C18 4.5 15.5 2 12 2zm-2 14h4l.5 2h-5l.5-2zm.5-2.5l-.4-2.3c.6.2 1.2.3 1.9.3s1.3-.1 1.9-.3l-.4 2.3h-3z"/>
+        </svg>
+      </div>
+      <div>
+        <div class="logo-text">Panadería Fernández</div>
+        <div class="logo-sub">Panadería &amp; Café · Córdoba</div>
+      </div>
+    </a>
+
+    <nav aria-label="Navegación principal">
+      <a href="#menu">Menú</a>
+      <a href="#sucursales">Sucursales</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile nav -->
+  <div class="mobile-menu" id="mobile-menu" role="navigation" aria-label="Menú móvil">
+    <a href="#menu" class="mobile-link">🥐 Ver Menú</a>
+    <a href="#sucursales" class="mobile-link">📍 Sucursales</a>
+    <a href="#nosotros" class="mobile-link">❤️ Nosotros</a>
+    <a href="#contacto" class="mobile-link">📞 Contacto</a>
+  </div>
+
+  <!-- ======================== HERO ======================== -->
+  <section id="hero" class="full-width">
+    <span class="hero-badge">🌾 Córdoba, desde siempre</span>
+    <h1 class="hero-title">Panadería<br /><em>Fernández</em></h1>
+    <p class="hero-sub">Panadería y café para disfrutar todos los días. Desayunos, meriendas y especialidades artesanales.</p>
+    <div class="hero-buttons">
+      <a href="#menu" class="btn btn-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/></svg>
+        Ver Menú
+      </a>
+      <a href="#sucursales" class="btn btn-secondary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5 14.5 7.6 14.5 9 13.4 11.5 12 11.5z"/></svg>
+        6 Sucursales
+      </a>
+      <a href="https://wa.me/548816170" target="_blank" rel="noopener" class="btn btn-whatsapp">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.2-.6.9-.8 1-.1.2-.3.2-.6.1-.3-.2-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6.1-.1.2-.3.4-.4.1-.1.2-.3.2-.4 0-.2 0-.4-.1-.5-.1-.2-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.2C8 8.2 7.2 9 7.2 10.6c0 1.6 1.2 3.2 1.4 3.4.2.2 2.4 3.7 5.8 5.1 3.4 1.5 3.4 1 4 .9.6-.1 1.7-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.5-.4z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 2.1.7 4.1 1.9 5.7L2.3 22l4.5-1.5C8.3 21.5 10.1 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.9 0-3.7-.6-5.1-1.5l-.3-.2-3.1 1 1-3-.2-.4C3.6 15.4 3 13.8 3 12 3 7 7 3 12 3s9 4 9 9-4 9-9 9z"/></svg>
+        Pedir por WhatsApp
+      </a>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <div class="scroll-line"></div>
+      <span>Explorar</span>
+    </div>
+  </section>
+
+  <!-- ======================== STATS BAR ======================== -->
+  <div class="stats-bar" aria-label="Datos del negocio">
+    <div class="stat-item">
+      <div class="stat-number">6</div>
+      <div class="stat-label">Sucursales en Córdoba</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">+50</div>
+      <div class="stat-label">Productos en menú</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">6 AM</div>
+      <div class="stat-label">Abrimos temprano</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">23 hs</div>
+      <div class="stat-label">Cerramos tarde (Arboleda)</div>
+    </div>
+  </div>
+
+  <!-- ======================== MENÚ DIGITAL ======================== -->
+  <section id="menu">
+    <h2 class="section-title reveal">Nuestro Menú</h2>
+    <div class="divider reveal"></div>
+    <p class="section-subtitle reveal">Todo lo que tenemos, claro y sin vueltas</p>
+
+    <!-- Tabs -->
+    <div class="menu-tabs reveal" role="tablist" aria-label="Categorías del menú">
+      <button class="tab-btn active" data-target="desayunos" role="tab" aria-selected="true">☀️ Desayunos</button>
+      <button class="tab-btn" data-target="combos" role="tab" aria-selected="false">🎯 Combos</button>
+      <button class="tab-btn" data-target="cafeteria" role="tab" aria-selected="false">☕ Cafetería</button>
+      <button class="tab-btn" data-target="bebidas" role="tab" aria-selected="false">🥤 Bebidas</button>
+      <button class="tab-btn" data-target="salado" role="tab" aria-selected="false">🥪 Salado</button>
+      <button class="tab-btn" data-target="dulce" role="tab" aria-selected="false">🍰 Dulce</button>
+      <button class="tab-btn" data-target="panaderia" role="tab" aria-selected="false">🍞 Panadería</button>
+      <button class="tab-btn" data-target="minutas" role="tab" aria-selected="false">🍕 Minutas</button>
+    </div>
+
+    <!-- PANEL: Desayunos -->
+    <div class="menu-panel active reveal" id="panel-desayunos" role="tabpanel">
+      <p style="font-size:0.88rem;color:var(--text-light);margin-bottom:1rem;font-style:italic;">Los precios de desayunos varían según opciones. Consultá en el local o pedí tu combo desde la sección de combos.</p>
+
+      <h3 class="menu-category-title"><span>☀️</span> Desayunos</h3>
+
+      <div class="menu-item">
+        <div class="item-left">
+          <div class="item-name">Desayuno Clásico</div>
+          <div class="item-desc">Infusión + 2 medialunas + jugo exprimido</div>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="item-left">
+          <div class="item-name">Desayuno Completo</div>
+          <div class="item-desc">Infusión + 1 medialuna + 2 criollos + mermelada o queso + jugo exprimido + ensaladita de fruta</div>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="item-left">
+          <div class="item-name">Desayuno Light</div>
+          <div class="item-desc">Infusión + 3 tostadas integrales + mermelada o queso + jugo exprimido + ensaladita de fruta</div>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="item-left">
+          <div class="item-name">De la Casa</div>
+          <div class="item-desc">Infusión + 3 tostadas integrales o de campo + 3 fetas jamón/queso + huevo revuelto + queso crema/manteca + jugo exprimido</div>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="item-left">
+          <div class="item-name">Desayuno Omelette</div>
+          <div class="item-desc">Infusión + omelette de jamón y queso + jugo exprimido</div>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="item-left">
+          <div class="item-name">Desayuno Francés</div>
+          <div class="item-desc">Infusión + waffle salado o dulce + jugo exprimido</div>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="item-left">
+          <div class="item-name">Desayuno Licuado</div>
+          <div class="item-desc">Licuado o jugo exprimido + tostado</div>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="item-left">
+          <div class="item-name">Dulce Despertar</div>
+          <div class="item-desc">Infusión, capuchino o submarino + porción de torta o 150g de especialidad</div>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="item-left">
+          <div class="item-name">Desayuno Energético</div>
+          <div class="item-desc">Infusión + 2 tostadas con palta y huevo (pan de campo o integral) + jugo exprimido + yogurcito con granola</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PANEL: Combos -->
+    <div class="menu-panel" id="panel-combos" role="tabpanel">
+      <h3 class="menu-category-title"><span>🎯</span> Combos Desayuno y Merienda</h3>
+
+      <div class="combo-card">
+        <div class="item-left">
+          <div class="item-name">Combo Clásico <span class="badge-vendido">⭐ Más vendido</span></div>
+          <div class="item-desc">Infusión + 2 medialunas</div>
+        </div>
+        <div class="item-price">$7.700</div>
+      </div>
+
+      <div class="combo-card">
+        <div class="item-left">
+          <div class="item-name">Combo Clásico 2 <span class="badge-vendido">⭐ Más vendido</span></div>
+          <div class="item-desc">Infusión + 3 criollos</div>
+        </div>
+        <div class="item-price">$6.000</div>
+      </div>
+
+      <div class="combo-card">
+        <div class="item-left">
+          <div class="item-name">Combo Torta <span class="badge-vendido">⭐ Más vendido</span></div>
+          <div class="item-desc">Infusión + porción de torta a elección</div>
+        </div>
+        <div class="item-price">$10.500</div>
+      </div>
+
+      <div class="combo-card">
+        <div class="item-left">
+          <div class="item-name">Combo Tostado</div>
+          <div class="item-desc">Infusión o licuado + tostado</div>
+        </div>
+        <div class="item-price">$11.500</div>
+      </div>
+
+      <h3 class="menu-category-title"><span>☕</span> Combos Simples</h3>
+
+      <div class="menu-item">
+        <div class="item-left">
+          <div class="item-name">Taza doble + 3 criollos</div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <div class="item-left">
+          <div class="item-name">Jarro + 2 criollos</div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <div class="item-left">
+          <div class="item-name">Jarro + medialuna</div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <div class="item-left">
+          <div class="item-name">Jarro + 2 criollos + mermelada/queso + jugo exprimido</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PANEL: Cafetería -->
+    <div class="menu-panel" id="panel-cafeteria" role="tabpanel">
+      <h3 class="menu-category-title"><span>☕</span> Infusiones y Cafetería</h3>
+
+      <div class="menu-item">
+        <div class="item-left">
+          <div class="item-name">Café para Llevar <span class="badge-vendido">⭐ Más vendido</span></div>
+          <div class="item-desc">Infusión a elección</div>
+        </div>
+        <div class="item-price">$5.000</div>
+      </div>
+      <div class="menu-item"><div class="item-left"><div class="item-name">Pocillo</div></div></div>
+      <div class="menu-item"><div class="item-left"><div class="item-name">Jarro</div></div></div>
+      <div class="menu-item"><div class="item-left"><div class="item-name">Capuchino</div></div></div>
+      <div class="menu-item"><div class="item-left"><div class="item-name">Submarino</div></div></div>
+      <div class="menu-item"><div class="item-left"><div class="item-name">Mocca</div></div></div>
+      <div class="menu-item"><div class="item-left"><div class="item-name">Café con syrup de pistacho</div></div></div>
+      <div class="menu-item"><div class="item-left"><div class="item-name">Té</div></div></div>
+      <div class="menu-item"><div class="item-left"><div class="item-name">Pistacho</div></div></div>
+    </div>
+
+    <!-- PANEL: Bebidas -->
+    <div class="menu-panel" id="panel-bebidas" role="tabpanel">
+      <h3 class="menu-category-title"><span>🥤</span> Bebidas Frías</h3>
+
+      <div class="menu-item">
+        <div class="item-left"><div class="item-name">Coca-Cola 2.25 L</div></div>
+        <div class="item-price">$6.000</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-left"><div class="item-name">Coca-Cola 1.5 L</div></div>
+        <div class="item-price">$4.500</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-left"><div class="item-name">Coca-Cola 500 ml</div></div>
+        <div class="item-price">$3.000</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-left"><div class="item-name">Coca-Cola Zero 500 ml</div></div>
+        <div class="item-price">$3.000</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-left"><div class="item-name">Coca-Cola Zero 1.5 L</div></div>
+        <div class="item-price">$4.500</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-left"><div class="item-name">Sprite 500 ml</div></div>
+        <div class="item-price">$3.000</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-left"><div class="item-name">Fanta 500 ml</div></div>
+        <div class="item-price">$3.000</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-left"><div class="item-name">Agua sin gas Bonaqua 500 ml</div></div>
+        <div class="item-price">$3.000</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-left"><div class="item-name">Cerveza 710 ml</div></div>
+      </div>
+
+      <h3 class="menu-category-title"><span>🍹</span> Bebidas Naturales</h3>
+
+      <div class="menu-item">
+        <div class="item-left">
+          <div class="item-name">Licuado</div>
+          <div class="item-desc">Frutilla, durazno o banana</div>
+        </div>
+        <div class="item-price">$6.500</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-left"><div class="item-name">Jugo exprimido de naranja</div></div>
+        <div class="item-price">$6.500</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-left"><div class="item-name">Limonada y menta</div></div>
+      </div>
+      <div class="menu-item">
+        <div class="item-left">
+          <div class="item-name">Ensalada de fruta</div>
+          <div class="item-desc">Manzana, pera, banana, kiwi y frutilla</div>
+        </div>
+        <div class="item-price">$5.500</div>
+      </div>
+    </div>
+
+    <!-- PANEL: Salado -->
+    <div class="menu-panel" id="panel-salado" role="tabpanel">
+      <h3 class="menu-category-title"><span>🥖</span> Baguette / Pan</h3>
+
+      <div class="menu-item">
+        <div class="item-left">
+          <div class="item-name">Baguette Jamón</div>
+          <div class="item-desc">Jamón cocido + queso + lechuga y tomate + mayonesa</div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <div class="item-left">
+          <div class="item-name">Baguette Salame</div>
+          <div class="item-desc">Salame + queso + lechuga y tomate + mayonesa</div>
+        </div>
+      </div>
+
+      <h3 class="menu-category-title"><span>🧇</span> Wafle Salado</h3>
+
+      <div class="menu-item">
+        <div class="item-left">
+          <div class="item-name">Wafle Jamón y Queso</div>
+          <div class="item-desc">Jamón + queso + queso crema + lechuga y tomate</div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <div class="item-left">
+          <div class="item-name">Wafle Salame</div>
+          <div class="item-desc">Salame + queso + queso crema + lechuga y tomate</div>
+        </div>
+      </div>
+
+      <h3 class="menu-category-title"><span>🍞</span> Tostados y Otros</h3>
+
+      <div class="menu-item">
+        <div class="item-left">
+          <div class="item-name">Tostado Napolitano</div>
+          <div class="item-desc">Pan árabe + jamón + queso + mayonesa (gratinado con mozzarella, tomate y orégano)</div>
+        </div>
+      </div>
+      <div class="menu-item"><div class="item-left"><div class="item-name">Tostado clásico</div></div></div>
+      <div class="menu-item"><div class="item-left"><div class="item-name">Tostón palta y huevo (2 unid)</div></div></div>
+      <div class="menu-item"><div class="item-left"><div class="item-name">Mafalda</div></div></div>
+      <div class="menu-item"><div class="item-left"><div class="item-name">Porción fiambre (3 fetas)</div></div></div>
+      <div class="menu-item"><div class="item-left"><div class="item-name">Huevo revuelto</div></div></div>
+      <div class="menu-item"><div class="item-left"><div class="item-name">Chipá (100g)</div></div></div>
+
+      <h3 class="menu-category-title"><span>🥪</span> Sándwiches</h3>
+
+      <div class="menu-item">
+        <div class="item-left">
+          <div class="item-name">Sándwich de Miga <span class="badge-vendido">⭐ Más vendido</span></div>
+          <div class="item-desc">Jamón y queso</div>
+        </div>
+        <div class="item-price">$3.700</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-left">
+          <div class="item-name">Pebete</div>
+          <div class="item-desc">Salame o jamón</div>
+        </div>
+        <div class="item-price">$3.700</div>
+      </div>
+    </div>
+
+    <!-- PANEL: Dulce -->
+    <div class="menu-panel" id="panel-dulce" role="tabpanel">
+      <h3 class="menu-category-title"><span>🍰</span> Tortas (por porción)</h3>
+
+      <div class="menu-item">
+        <div class="item-left"><div class="item-name">Torta Moka</div></div>
+        <div class="item-price">$5.000</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-left"><div class="item-name">Torta Frutilla</div></div>
+        <div class="item-price">$5.000</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-left"><div class="item-name">Torta Durazno</div></div>
+        <div class="item-price">$5.000</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-left"><div class="item-name">Selva Negra</div></div>
+        <div class="item-price">$5.000</div>
+      </div>
+
+      <h3 class="menu-category-title"><span>🧇</span> Dulces Varios</h3>
+
+      <div class="menu-item"><div class="item-left"><div class="item-name">Wafle dulce</div><div class="item-desc">Frutas + dulce de leche + miel</div></div></div>
+      <div class="menu-item"><div class="item-left"><div class="item-name">Croissant</div></div></div>
+      <div class="menu-item"><div class="item-left"><div class="item-name">Yogurt granola y fruta</div></div></div>
+      <div class="menu-item"><div class="item-left"><div class="item-name">Ensalada de frutas</div></div></div>
+      <div class="menu-item"><div class="item-left"><div class="item-name">Especialidad (100g)</div></div></div>
+      <div class="menu-item"><div class="item-left"><div class="item-name">Facturas</div></div></div>
+      <div class="menu-item"><div class="item-left"><div class="item-name">Donas</div></div></div>
+      <div class="menu-item"><div class="item-left"><div class="item-name">Pastelitos</div></div></div>
+      <div class="menu-item"><div class="item-left"><div class="item-name">Alfajor maicena chocolate</div></div></div>
+
+      <h3 class="menu-category-title"><span>🍪</span> Masas Secas (1/4 kg)</h3>
+
+      <div class="menu-item">
+        <div class="item-left"><div class="item-name">Palmeritas</div></div>
+        <div class="item-price">$6.000</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-left"><div class="item-name">Cañoncitos</div></div>
+        <div class="item-price">$6.000</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-left"><div class="item-name">Maicenitas</div></div>
+        <div class="item-price">$6.000</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-left"><div class="item-name">Alfarjocitos</div></div>
+        <div class="item-price">$6.000</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-left"><div class="item-name">Galletas de avena</div></div>
+        <div class="item-price">$6.000</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-left"><div class="item-name">Galletas de manteca</div></div>
+        <div class="item-price">$6.000</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-left"><div class="item-name">Especialidad a elección</div></div>
+        <div class="item-price">$6.000</div>
+      </div>
+    </div>
+
+    <!-- PANEL: Panadería -->
+    <div class="menu-panel" id="panel-panaderia" role="tabpanel">
+      <h3 class="menu-category-title"><span>⭐</span> Más Vendidos</h3>
+
+      <div class="menu-item">
+        <div class="item-left"><div class="item-name">1/4 Criollos hojaldre <span class="badge-vendido">⭐ Más vendido</span></div></div>
+        <div class="item-price">$2.800</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-left"><div class="item-name">1/4 Criollos comunes <span class="badge-vendido">⭐ Más vendido</span></div></div>
+        <div class="item-price">$2.800</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-left"><div class="item-name">1/2 Docena de facturas <span class="badge-vendido">⭐ Más vendido</span></div></div>
+        <div class="item-price">$6.500</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-left"><div class="item-name">1/2 Docena de medialunas <span class="badge-vendido">⭐ Más vendido</span></div></div>
+        <div class="item-price">$6.500</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-left"><div class="item-name">Pan (1 kg)</div></div>
+        <div class="item-price">$4.000</div>
+      </div>
+
+      <h3 class="menu-category-title"><span>🍞</span> Panes y Otros</h3>
+
+      <div class="menu-item">
+        <div class="item-left"><div class="item-name">Pan integral con semillas</div></div>
+        <div class="item-price">$5.900</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-left"><div class="item-name">Pan de campo</div></div>
+        <div class="item-price">$4.000</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-left"><div class="item-name">1/4 Pan salvado</div></div>
+        <div class="item-price">$2.000</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-left"><div class="item-name">Prepizza rectangular</div></div>
+        <div class="item-price">$4.000</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-left"><div class="item-name">Prepizza redonda</div></div>
+        <div class="item-price">$3.100</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-left"><div class="item-name">100g Bizcochos de grasa</div></div>
+        <div class="item-price">$1.900</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-left"><div class="item-name">100g Chalitas comunes</div></div>
+        <div class="item-price">$1.900</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-left"><div class="item-name">100g Chalitas con semillas</div></div>
+        <div class="item-price">$1.900</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-left"><div class="item-name">100g Tostadas</div></div>
+        <div class="item-price">$1.900</div>
+      </div>
+
+      <h3 class="menu-category-title"><span>🍝</span> Pastas Artesanales</h3>
+
+      <div class="menu-item">
+        <div class="item-left">
+          <div class="item-name">Ravioles pollo y verdura (500g)</div>
+        </div>
+        <div class="item-price">$10.000</div>
+      </div>
+    </div>
+
+    <!-- PANEL: Minutas -->
+    <div class="menu-panel" id="panel-minutas" role="tabpanel">
+      <h3 class="menu-category-title"><span>🍕</span> Minutas y Platos</h3>
+
+      <div class="menu-item"><div class="item-left"><div class="item-name">Sándwich de milanesa</div></div></div>
+      <div class="menu-item"><div class="item-left"><div class="item-name">Empanadas criollas</div></div></div>
+      <div class="menu-item"><div class="item-left"><div class="item-name">Empanadas árabes</div></div></div>
+      <div class="menu-item"><div class="item-left"><div class="item-name">Tarta de verdura</div></div></div>
+      <div class="menu-item"><div class="item-left"><div class="item-name">Tarta jamón y queso</div></div></div>
+      <div class="menu-item"><div class="item-left"><div class="item-name">Pizza / pizzeta</div></div></div>
+
+      <p style="margin-top:1.2rem;font-size:0.88rem;color:var(--text-light);font-style:italic;">
+        Consultá disponibilidad y precios de minutas directamente en el local o por WhatsApp.
+      </p>
+    </div>
+
+    <!-- Nota de precios -->
+    <div style="background:rgba(197,154,60,0.08);border:1px solid rgba(197,154,60,0.25);border-radius:var(--radius-sm);padding:0.9rem 1.2rem;margin-top:2rem;font-size:0.87rem;color:var(--text-mid);text-align:center;" class="reveal">
+      💡 <strong>Nota:</strong> Los precios pueden variar. Este menú es orientativo. Para precios actualizados, consultá en el local o pedí por PedidosYa.
+    </div>
+  </section>
+
+  <!-- ======================== SUCURSALES ======================== -->
+  <section id="sucursales" class="full-width">
+    <h2 class="section-title reveal">Nuestras Sucursales</h2>
+    <div class="divider reveal"></div>
+    <p class="section-subtitle reveal">6 locales en Córdoba para que siempre tengas uno cerca</p>
+
+    <div class="sucursales-grid" style="max-width:900px;margin:0 auto;padding:0 1.4rem;">
+
+      <!-- Julio Arboleda - destacada por horario extendido -->
+      <div class="sucursal-card reveal">
+        <div class="badge-nocturno">🌙 Abierto hasta las 23hs</div>
+        <div class="sucursal-name">Julio Arboleda</div>
+        <div class="sucursal-address">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--bordo)"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5 14.5 7.6 14.5 9 13.4 11.5 12 11.5z"/></svg>
+          Julio Arboleda 3857, Córdoba
+        </div>
+        <div class="sucursal-horarios">
+          <div class="horario-row"><span class="horario-dia">Lunes a Domingo</span><span class="horario-hora">7:00 – 23:00</span></div>
+        </div>
+        <a href="https://maps.google.com/?q=Julio+Arboleda+3857+Córdoba+Argentina" target="_blank" rel="noopener" class="btn-maps">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5 14.5 7.6 14.5 9 13.4 11.5 12 11.5z"/></svg>
+          Cómo llegar
+        </a>
+      </div>
+
+      <!-- Santa Fe -->
+      <div class="sucursal-card reveal">
+        <div class="sucursal-name">Av. Santa Fe</div>
+        <div class="sucursal-address">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--bordo)"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5 14.5 7.6 14.5 9 13.4 11.5 12 11.5z"/></svg>
+          Av. Santa Fe 944, Córdoba
+        </div>
+        <div class="sucursal-horarios">
+          <div class="horario-row"><span class="horario-dia">Lunes a Viernes</span><span class="horario-hora">6:00 – 21:00</span></div>
+          <div class="horario-row"><span class="horario-dia">Sábado</span><span class="horario-hora">6:00 – 21:00</span></div>
+          <div class="horario-row"><span class="horario-dia">Domingo</span><span class="horario-hora">7:30 – 20:00</span></div>
+        </div>
+        <a href="https://maps.google.com/?q=Av+Santa+Fe+944+Córdoba+Argentina" target="_blank" rel="noopener" class="btn-maps">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5 14.5 7.6 14.5 9 13.4 11.5 12 11.5z"/></svg>
+          Cómo llegar
+        </a>
+      </div>
+
+      <!-- Diagonal Ica -->
+      <div class="sucursal-card reveal">
+        <div class="sucursal-name">Av. Diagonal Ica</div>
+        <div class="sucursal-address">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--bordo)"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5 14.5 7.6 14.5 9 13.4 11.5 12 11.5z"/></svg>
+          Av. Diagonal Ica 784, Córdoba
+        </div>
+        <div class="sucursal-horarios">
+          <div class="horario-row"><span class="horario-dia">Horario</span><span class="horario-hora">Consultá al local</span></div>
+        </div>
+        <a href="https://maps.google.com/?q=Av+Diagonal+Ica+784+Córdoba+Argentina" target="_blank" rel="noopener" class="btn-maps">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5 14.5 7.6 14.5 9 13.4 11.5 12 11.5z"/></svg>
+          Cómo llegar
+        </a>
+      </div>
+
+      <!-- Emilio Caraffa -->
+      <div class="sucursal-card reveal">
+        <div class="sucursal-name">Av. Emilio Caraffa</div>
+        <div class="sucursal-address">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--bordo)"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5 14.5 7.6 14.5 9 13.4 11.5 12 11.5z"/></svg>
+          Av. Emilio Caraffa 2568, Córdoba
+        </div>
+        <div class="sucursal-horarios">
+          <div class="horario-row"><span class="horario-dia">Lunes a Viernes</span><span class="horario-hora">6:00 – 21:00</span></div>
+          <div class="horario-row"><span class="horario-dia">Sábado</span><span class="horario-hora">6:30 – 20:30</span></div>
+          <div class="horario-row"><span class="horario-dia">Domingo</span><span class="horario-hora">7:30 – 20:00</span></div>
+        </div>
+        <a href="https://maps.google.com/?q=Av+Emilio+Caraffa+2568+Córdoba+Argentina" target="_blank" rel="noopener" class="btn-maps">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5 14.5 7.6 14.5 9 13.4 11.5 12 11.5z"/></svg>
+          Cómo llegar
+        </a>
+      </div>
+
+      <!-- Monseñor Pablo Cabrera -->
+      <div class="sucursal-card reveal">
+        <div class="sucursal-name">Monseñor Pablo Cabrera</div>
+        <div class="sucursal-address">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--bordo)"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5 14.5 7.6 14.5 9 13.4 11.5 12 11.5z"/></svg>
+          Av. Monseñor Pablo Cabrera 3101, Córdoba
+        </div>
+        <div class="sucursal-horarios">
+          <div class="horario-row"><span class="horario-dia">Lunes a Viernes</span><span class="horario-hora">6:00 – 21:00</span></div>
+          <div class="horario-row"><span class="horario-dia">Sábado</span><span class="horario-hora">6:00 – 21:00</span></div>
+          <div class="horario-row"><span class="horario-dia">Domingo</span><span class="horario-hora">7:30 – 20:00</span></div>
+        </div>
+        <a href="https://maps.google.com/?q=Av+Monseñor+Pablo+Cabrera+3101+Córdoba+Argentina" target="_blank" rel="noopener" class="btn-maps">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5 14.5 7.6 14.5 9 13.4 11.5 12 11.5z"/></svg>
+          Cómo llegar
+        </a>
+      </div>
+
+      <!-- Fructuoso Rivera -->
+      <div class="sucursal-card reveal">
+        <div class="sucursal-name">Fructuoso Rivera</div>
+        <div class="sucursal-address">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--bordo)"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5 14.5 7.6 14.5 9 13.4 11.5 12 11.5z"/></svg>
+          Fructuoso Rivera 800, Córdoba
+        </div>
+        <div class="sucursal-horarios">
+          <div class="horario-row"><span class="horario-dia">Lunes a Viernes</span><span class="horario-hora">6:00 – 21:00</span></div>
+          <div class="horario-row"><span class="horario-dia">Sábado</span><span class="horario-hora">7:00 – 21:00</span></div>
+          <div class="horario-row"><span class="horario-dia">Domingo</span><span class="horario-hora">8:00 – 20:00</span></div>
+        </div>
+        <a href="https://maps.google.com/?q=Fructuoso+Rivera+800+Córdoba+Argentina" target="_blank" rel="noopener" class="btn-maps">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5 14.5 7.6 14.5 9 13.4 11.5 12 11.5z"/></svg>
+          Cómo llegar
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================== SOBRE NOSOTROS ======================== -->
+  <section id="nosotros" class="full-width">
+    <div class="inner">
+      <h2 class="section-title reveal">Quiénes Somos</h2>
+      <div class="divider reveal"></div>
+
+      <p class="nosotros-text reveal">
+        Panadería Fernández nació con una idea simple: que ir a buscar el pan de la mañana sea algo que uno disfrute, no solo una parada obligada. Hoy tenemos seis locales en Córdoba, cada uno con el mismo espíritu: producto artesanal, buen café y un lugar donde sentarse sin apuro.
+      </p>
+      <p class="nosotros-text reveal">
+        Tenemos de todo. Facturas recién salidas del horno, desayunos completos que te sacan las ganas de salir a comer afuera, tortas que se piden por encargo y un menú que va desde el combo más simple hasta pastas artesanales. Y siempre a un precio razonable.
+      </p>
+
+      <div class="features-grid reveal">
+        <div class="feature-item">
+          <div class="feature-icon">☕</div>
+          <div class="feature-label">Café de calidad</div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🥐</div>
+          <div class="feature-label">Panadería artesanal</div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🏠</div>
+          <div class="feature-label">Ambiente familiar</div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">📍</div>
+          <div class="feature-label">6 sucursales</div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🕕</div>
+          <div class="feature-label">Abrimos temprano</div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🍰</div>
+          <div class="feature-label">Menú completo</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== CONTACTO ======================== -->
+  <section id="contacto" class="full-width">
+    <div class="inner">
+      <h2 class="section-title reveal">Encontranos</h2>
+      <div class="divider reveal"></div>
+      <p class="section-subtitle reveal">Estamos en Instagram, PedidosYa o directamente en el local</p>
+
+      <div class="contact-links reveal">
+        <a href="https://wa.me/548816170" target="_blank" rel="noopener" class="contact-btn contact-btn-wa">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.2-.6.9-.8 1-.1.2-.3.2-.6.1-.3-.2-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6.1-.1.2-.3.4-.4.1-.1.2-.3.2-.4 0-.2 0-.4-.1-.5-.1-.2-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.2C8 8.2 7.2 9 7.2 10.6c0 1.6 1.2 3.2 1.4 3.4.2.2 2.4 3.7 5.8 5.1 3.4 1.5 3.4 1 4 .9.6-.1 1.7-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.5-.4z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 2.1.7 4.1 1.9 5.7L2.3 22l4.5-1.5C8.3 21.5 10.1 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.9 0-3.7-.6-5.1-1.5l-.3-.2-3.1 1 1-3-.2-.4C3.6 15.4 3 13.8 3 12 3 7 7 3 12 3s9 4 9 9-4 9-9 9z"/></svg>
+          WhatsApp
+        </a>
+
+        <a href="https://www.instagram.com/fernandezpanaderia.cafe/" target="_blank" rel="noopener" class="contact-btn contact-btn-ig">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          Instagram
+        </a>
+
+        <a href="https://www.pedidosya.com.ar/restaurantes/cordoba/fernandez-panaderia-y-cafe-7eb65bc8-a038-4c42-bcca-0ed73a64224a-menu" target="_blank" rel="noopener" class="contact-btn contact-btn-py">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19 7h-3V6a4 4 0 0 0-8 0v1H5a1 1 0 0 0-1 1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8a1 1 0 0 0-1-1zm-9-1a2 2 0 0 1 4 0v1h-4V6zm8 13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9h2v1a1 1 0 0 0 2 0V9h4v1a1 1 0 0 0 2 0V9h2v10z"/></svg>
+          Pedir en PedidosYa
+        </a>
+
+        <a href="https://taplink.cc/fernandezpanaderiaycafe" target="_blank" rel="noopener" class="contact-btn" style="background:rgba(250,245,236,0.12);border:1px solid rgba(250,245,236,0.25);color:var(--cream);">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17 7H7a5 5 0 0 0 0 10h10a5 5 0 0 0 0-10zm0 8H7a3 3 0 0 1 0-6h10a3 3 0 0 1 0 6z"/></svg>
+          Taplink
+        </a>
+      </div>
+
+      <div class="tel-box reveal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--gold)"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+        <a href="tel:+548816170" style="color:var(--cream);">+54 8816170</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer>
+    <p>© 2025 <strong>Panadería Fernández</strong> · Córdoba, Argentina · Todos los derechos reservados</p>
+    <p style="margin-top:0.4rem;opacity:0.6;">Los precios pueden actualizarse. Consultá en el local para precios vigentes.</p>
+  </footer>
+
+  <!-- WhatsApp flotante -->
+  <a href="https://wa.me/548816170" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.2-.6.9-.8 1-.1.2-.3.2-.6.1-.3-.2-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6.1-.1.2-.3.4-.4.1-.1.2-.3.2-.4 0-.2 0-.4-.1-.5-.1-.2-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.2C8 8.2 7.2 9 7.2 10.6c0 1.6 1.2 3.2 1.4 3.4.2.2 2.4 3.7 5.8 5.1 3.4 1.5 3.4 1 4 .9.6-.1 1.7-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.5-.4z"/>
+      <path d="M12 2C6.5 2 2 6.5 2 12c0 2.1.7 4.1 1.9 5.7L2.3 22l4.5-1.5C8.3 21.5 10.1 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.9 0-3.7-.6-5.1-1.5l-.3-.2-3.1 1 1-3-.2-.4C3.6 15.4 3 13.8 3 12 3 7 7 3 12 3s9 4 9 9-4 9-9 9z"/>
+    </svg>
+  </a>
+
+  <!-- ======================== JS ======================== -->
+  <script>
+    // ---- Header scroll effect ----
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+
+    // ---- Mobile menu ----
+    const toggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    toggle.addEventListener('click', () => {
+      const open = mobileMenu.classList.toggle('open');
+      toggle.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+
+    // Close mobile menu on link click
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        toggle.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // ---- Menu tabs ----
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const panels  = document.querySelectorAll('.menu-panel');
+
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = btn.dataset.target;
+
+        tabBtns.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+        panels.forEach(p  => p.classList.remove('active'));
+
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+        document.getElementById('panel-' + target).classList.add('active');
+      });
+    });
+
+    // ---- Scroll reveal ----
+    const revealEls = document.querySelectorAll('.reveal');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          // Stagger within same viewport hit
+          setTimeout(() => {
+            entry.target.classList.add('visible');
+          }, i * 60);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -30px 0px' });
+
+    revealEls.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
