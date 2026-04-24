@@ -5,8 +5,8 @@ import { Star, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import SectionTitle from '../SectionTitle';
 
-const PASTRY_IMAGE = '/images/exterior.jpg';
-const MENU_IMAGE = '/images/fachada.jpg';
+const PASTRY_IMAGE = `${import.meta.env.BASE_URL}images/exterior.jpg`;
+const MENU_IMAGE = `${import.meta.env.BASE_URL}images/fachada.jpg`;
 
 const bestSellers = [
   { name: 'Combo Clásico', desc: 'Infusión + 2 medialunas', price: '$7.700', tag: 'Más vendido' },

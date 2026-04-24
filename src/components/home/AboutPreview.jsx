@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import SectionTitle from '../SectionTitle';
 
-const ABOUT_IMAGE = '/images/about.jpg';
+const ABOUT_IMAGE = `${import.meta.env.BASE_URL}images/about.jpg`;
 
 export default function AboutPreview() {
   return (

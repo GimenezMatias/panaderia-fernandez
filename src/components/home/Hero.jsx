@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { UtensilsCrossed, MapPin, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
-const HERO_IMAGE = '/images/hero.jpg';
+const HERO_IMAGE = `${import.meta.env.BASE_URL}images/hero.jpg`;
 
 export default function Hero() {
   return (

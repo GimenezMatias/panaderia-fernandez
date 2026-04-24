@@ -74,14 +74,14 @@ export default function MenuCategoryNav({ categories, activeCategory, onSelect }
                 key={cat.id}
                 data-active={isActive}
                 onClick={() => onSelect(cat.id)}
-                className={`relative flex-shrink-0 px-4 py-2 rounded-full text-sm font-body font-medium transition-all duration-300 ${
+                className={`relative flex-shrink-0 px-4 py-2 rounded-full text-sm font-body font-medium transition-all duration-300 whitespace-nowrap ${
                   isActive
                     ? 'bg-primary text-primary-foreground shadow-md'
                     : 'bg-secondary/70 text-muted-foreground hover:bg-secondary hover:text-foreground'
                 }`}
               >
                 <span className="mr-1.5">{cat.emoji}</span>
-                {cat.name.length > 20 ? cat.name.split(' ').slice(0, 2).join(' ') : cat.name}
+                {cat.name}
               </button>
             );
           })}
